@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2 class="player-name">${player.name}</h2>
                     <p class="player-team">${player.team || 'Unknown Team'}</p>
                     <div class="player-stats">
-                        {/* Stats content */}
+                        
                         <p class="stat-line price-line"><i class="fas fa-tag stat-icon price-icon"></i>Auction Price: <span class="value price-value">${priceDisplay}</span></p><hr class="stat-divider">
                         <div class="core-stats">
                             <p class="stat-line"><i class="fas fa-person-running stat-icon runs-icon"></i>Runs: <span class="value runs-value" ${!hasRuns ? 'data-placeholder="true"' : ''}>${runsDisplay}</span></p>
