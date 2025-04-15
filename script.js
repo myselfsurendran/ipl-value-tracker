@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const runs = player.runs || 0;
             const wickets = player.wickets || 0;
             const priceLakhs = priceCr * 100;
-            const runsPerLakh = priceLakhs > 0 ? parseFloat((runs / priceLakhs).toFixed(2)) : 0;
-            const wicketsPerLakh = priceLakhs > 0 ? parseFloat((wickets / priceLakhs).toFixed(2)) : 0;
+            const runsPerLakh = priceLakhs > 0 ? parseFloat(((runs * 10) / priceLakhs).toFixed(2)) : 0;
+            const wicketsPerLakh = priceLakhs > 0 ? parseFloat(((wickets * 10) / priceLakhs).toFixed(2)) : 0;
             return { ...player, runsPerLakh, wicketsPerLakh };
         });
     }
@@ -231,8 +231,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             <p class="stat-line"><i class="fas fa-bowling-ball stat-icon wickets-icon"></i>Wickets: <span class="value wickets-value" ${!hasWickets ? 'data-placeholder="true"' : ''}>${wicketsDisplay}</span></p>
                         </div><hr class="stat-divider">
                         <div class="performance-metrics">
-                             <p class="performance-sentence"><span class="metric-value runs-metric" ${!hasRunsMetric ? 'data-placeholder="true"' : ''}>${runsMetricDisplay}</span> Runs per Lakh</p>
-                              <p class="performance-sentence"><span class="metric-value wickets-metric" ${!hasWicketsMetric ? 'data-placeholder="true"' : ''}>${wicketsMetricDisplay}</span> Wickets per Lakh</p>
+                             <p class="performance-sentence"><span class="metric-value runs-metric" ${!hasRunsMetric ? 'data-placeholder="true"' : ''}>${runsMetricDisplay}</span> Runs per 10 Lakhs</p>
+                              <p class="performance-sentence"><span class="metric-value wickets-metric" ${!hasWicketsMetric ? 'data-placeholder="true"' : ''}>${wicketsMetricDisplay}</span> Wickets per 10 Lakhs</p>
                         </div>
                     </div>
                 </div>
