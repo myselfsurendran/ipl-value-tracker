@@ -1,0 +1,433 @@
+/* File: style.css */
+
+/* --- Global Resets and Font Setup --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f9; /* Light grayish blue background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Header Styling --- */
+header {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%); /* Deep blue gradient */
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+header p {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* --- Main Content Area --- */
+main {
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center the content */
+    padding: 0 1rem; /* Add padding on the sides */
+}
+
+/* --- Controls Container (Filter & Sort) --- */
+.controls-container {
+    display: flex;
+    flex-direction: column; /* Stack filter and sort vertically */
+    gap: 1rem; /* Space between filter and sort */
+    margin-bottom: 2rem;
+    align-items: center; /* Center items horizontally */
+}
+
+/* Filter container styling */
+.filter-container {
+    margin-bottom: 0; /* Remove bottom margin as it's handled by controls-container gap */
+    padding: 0.8rem 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%; /* Make filter take full width of its parent */
+    max-width: 450px; /* Slightly wider max-width */
+}
+
+.filter-container label {
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap; /* Prevent label wrap */
+}
+
+.filter-container select {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    flex-grow: 1;
+    min-width: 150px; /* Ensure select has minimum width */
+}
+
+/* Sort container styling */
+.sort-container {
+    padding: 0.8rem 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; /* Space between label and buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center;
+    width: 100%;
+    max-width: 650px; /* Adjust max width as needed */
+}
+
+.sort-container label {
+     font-weight: 600;
+     color: #333;
+     margin-right: 0.5rem; /* Space after label */
+}
+
+.sort-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    gap: 0.5rem; /* Space between buttons */
+    justify-content: center;
+}
+
+.sort-btn {
+    padding: 0.4rem 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.sort-btn:hover {
+    background-color: #e9ecef;
+    border-color: #ccc;
+}
+
+/* Style for the currently active sort button */
+.sort-btn.active {
+    background-color: #1e3c72; /* Use header color */
+    color: #fff;
+    border-color: #1e3c72;
+    font-weight: 600;
+}
+
+/* --- Player List Container --- */
+.player-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to next line */
+    gap: 1.5rem; /* Space between cards */
+    justify-content: center; /* Center cards if space allows */
+    min-height: 100px; /* Ensure container has some height for messages */
+}
+
+/* Loading/Error Message Styles */
+.loading-message,
+.error-message {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+    color: #555;
+    width: 100%; /* Span full width of container */
+}
+.error-message {
+    color: #dc3545; /* Red color for errors */
+    font-weight: bold;
+}
+
+
+/* --- Individual Player Card Styling --- */
+.player-card {
+    background-color: #ffffff;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    overflow: hidden; /* Keep image corners rounded */
+    display: flex;
+    flex-direction: column; /* Stack image and info vertically */
+    flex: 1 1 300px; /* Flexible basis: grow, shrink, start at 300px */
+    max-width: 340px; /* Max width for larger screens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    position: relative; /* Needed for rank positioning context */
+}
+
+.player-card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); /* Enhance shadow on hover */
+}
+
+/* Player Rank Styling */
+.player-rank {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: rgba(30, 60, 114, 0.8); /* Semi-transparent theme color */
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    z-index: 10; /* Ensure it's above the photo */
+}
+
+/* Player Photo Container */
+.player-photo-container {
+    position: relative; /* Needed for absolute positioning of rank */
+    width: 100%;
+    height: 180px; /* Fixed height for consistency */
+    overflow: hidden;
+    background-color: #eee; /* Background color while image loads */
+}
+
+.player-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale image nicely */
+    object-position: center top; /* Focus on the top/center (often the face) */
+}
+
+/* Player Info Section */
+.player-info {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow info section to grow if needed */
+}
+
+.player-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1e3c72; /* Use a theme color */
+    margin-bottom: 0.1rem;
+}
+
+.player-team {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* Player Stats Section */
+.player-stats {
+    margin-top: auto; /* Push stats towards the bottom if card height varies */
+    font-size: 0.95rem; /* Slightly larger base font for stats */
+}
+
+.stat-divider {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0; /* Lighter divider */
+    margin: 0.8rem 0; /* Space around divider */
+}
+
+.stat-line {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    margin-bottom: 0.6rem;
+    color: #444;
+    min-height: 24px; /* Ensure line takes space even with placeholders */
+}
+
+.stat-icon {
+    margin-right: 0.6rem; /* Space between icon and text */
+    font-size: 1.1em; /* Slightly larger icon */
+    width: 20px; /* Fixed width for alignment */
+    text-align: center;
+}
+
+/* Icon Specific Colors */
+.price-icon { color: #007bff; }
+.runs-icon { color: #28a745; }
+.wickets-icon { color: #dc3545; }
+
+/* Styling the value numbers */
+.stat-line .value {
+    font-weight: 700; /* Bolder numbers */
+    margin-left: auto; /* Push value to the right */
+    padding: 0.2rem 0.6rem;
+    border-radius: 5px;
+    font-size: 1em; /* Base value size */
+    background-color: transparent; /* No background by default */
+    color: #333; /* Default value color */
+    min-width: 30px; /* Give placeholders some width */
+    text-align: right;
+    display: inline-block;
+}
+
+/* Specific Value Styling */
+.price-value { color: #0056b3; font-weight: 600; }
+
+/* Styles for placeholders (italic/gray) */
+.runs-value[data-placeholder="true"],
+.wickets-value[data-placeholder="true"] {
+   color: #555;
+   background-color: #f0f0f0;
+   font-style: italic;
+}
+
+/* Styles for actual values (colored, bold, bg) */
+.runs-value:not([data-placeholder="true"]) {
+   color: #1c6c34;
+   font-size: 1.15em;
+   background-color: #eaf6ec;
+   font-style: normal;
+}
+.wickets-value:not([data-placeholder="true"]) {
+    color: #a71d2a;
+    font-size: 1.15em;
+    background-color: #fdeeee;
+    font-style: normal;
+}
+
+/* Performance Metrics Section */
+.performance-metrics { margin-top: 0.5rem; }
+
+.performance-sentence {
+    font-size: 0.9em;
+    color: #555;
+    background-color: #f8f9fa;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    border: 1px solid #eee;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.performance-sentence .metric-value {
+    font-weight: 700;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    margin-right: 0.3rem;
+    min-width: 30px;
+}
+
+/* Styles for metric placeholders */
+.metric-value[data-placeholder="true"] {
+    color: #555;
+    background-color: #f0f0f0;
+    font-style: italic;
+}
+
+/* Styles for actual metrics */
+.runs-metric:not([data-placeholder="true"]) { color: #1c6c34; background-color: #eaf6ec; font-style: normal; }
+.wickets-metric:not([data-placeholder="true"]) { color: #a71d2a; background-color: #fdeeee; font-style: normal; }
+
+/* Load More Button Styling */
+.load-more-container {
+    text-align: center;
+    margin-top: 2rem; /* Space above the button */
+    margin-bottom: 1rem;
+}
+
+.load-more-btn {
+    padding: 0.8rem 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #2a5298; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none; /* Initially hidden - JS will show it */
+}
+
+.load-more-btn:hover {
+    background-color: #1e3c72; /* Darker hover */
+    transform: translateY(-2px);
+}
+
+.load-more-btn:active {
+     transform: translateY(0);
+}
+
+
+/* --- Footer Styling --- */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+    color: #777;
+    background-color: #e9ecef;
+}
+
+/* --- Responsive Design Adjustments --- */
+@media (max-width: 768px) {
+    .player-card {
+        flex-basis: calc(50% - 1rem); /* 2 cards per row */
+        max-width: calc(50% - 1rem);
+    }
+    header h1 { font-size: 1.8rem; }
+}
+
+@media (max-width: 600px) {
+    /* Stack controls vertically */
+    .controls-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .filter-container, .sort-container {
+        max-width: 100%;
+    }
+     .sort-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sort-container label {
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+     .player-list { gap: 1rem; }
+    .player-card {
+        flex-basis: 100%; /* 1 card per row */
+        max-width: 100%;
+    }
+     header h1 { font-size: 1.5rem; }
+     .player-name { font-size: 1.2rem; }
+     .stat-line .value { font-size: 0.95em; }
+     .runs-value:not([data-placeholder="true"]),
+     .wickets-value:not([data-placeholder="true"]) { font-size: 1.05em; }
+     .performance-sentence { font-size: 0.85em; padding: 0.3rem 0.6rem; }
+     .performance-sentence .metric-value { font-size: 1em; }
+}
