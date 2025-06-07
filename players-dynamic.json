@@ -1,26 +1,26 @@
 {
   "N Pooran": {
-    "runs": 410,
+    "runs": 524,
     "wickets": 0
   },
   "B Sai Sudharsan": {
-    "runs": 504,
+    "runs": 759,
     "wickets": 0
   },
   "MR Marsh": {
-    "runs": 378,
+    "runs": 627,
     "wickets": 0
   },
   "SS Iyer": {
-    "runs": 405,
+    "runs": 604,
     "wickets": 0
   },
   "V Kohli": {
-    "runs": 505,
+    "runs": 657,
     "wickets": 0
   },
   "SA Yadav": {
-    "runs": 475,
+    "runs": 717,
     "wickets": 0
   },
   "JC Buttler": {
@@ -32,15 +32,15 @@
     "wickets": 0
   },
   "NT Tilak Varma": {
-    "runs": 239,
+    "runs": 343,
     "wickets": 0
   },
   "PD Salt": {
-    "runs": 208,
+    "runs": 403,
     "wickets": 0
   },
   "Shubman Gill": {
-    "runs": 465,
+    "runs": 650,
     "wickets": 0
   },
   "AM Rahane": {
@@ -56,7 +56,7 @@
     "wickets": 0
   },
   "P Arya": {
-    "runs": 347,
+    "runs": 475,
     "wickets": 0
   },
   "SV Samson": {
@@ -68,7 +68,7 @@
     "wickets": 0
   },
   "RM Patidar": {
-    "runs": 239,
+    "runs": 312,
     "wickets": 0
   },
   "YBK Jaiswal": {
@@ -88,7 +88,7 @@
     "wickets": 0
   },
   "SE Rutherford": {
-    "runs": 158,
+    "runs": 291,
     "wickets": 0
   },
   "RD Rickelton": {
@@ -104,7 +104,7 @@
     "wickets": 0
   },
   "N Wadhera": {
-    "runs": 210,
+    "runs": 369,
     "wickets": 0
   },
   "AU Verma": {
@@ -124,7 +124,7 @@
     "wickets": 0
   },
   "Prabhsimran Singh": {
-    "runs": 437,
+    "runs": 549,
     "wickets": 0
   },
   "A Raghuvanshi": {
@@ -132,7 +132,7 @@
     "wickets": 0
   },
   "Naman Dhir": {
-    "runs": 155,
+    "runs": 252,
     "wickets": 0
   },
   "SP Narine": {
@@ -172,11 +172,11 @@
     "wickets": 0
   },
   "A Badoni": {
-    "runs": 326,
-    "wickets": 0
+    "runs": 329,
+    "wickets": 2
   },
   "Shashank Singh": {
-    "runs": 214,
+    "runs": 350,
     "wickets": 0
   },
   "Abishek Porel": {
@@ -204,7 +204,7 @@
     "wickets": 0
   },
   "JM Sharma": {
-    "runs": 128,
+    "runs": 261,
     "wickets": 0
   },
   "RA Jadeja": {
@@ -216,11 +216,11 @@
     "wickets": 0
   },
   "HH Pandya": {
-    "runs": 157,
-    "wickets": 13
+    "runs": 224,
+    "wickets": 14
   },
   "LS Livingstone": {
-    "runs": 83,
+    "runs": 112,
     "wickets": 2
   },
   "F du Plessis": {
@@ -232,19 +232,19 @@
     "wickets": 5
   },
   "M Shahrukh Khan": {
-    "runs": 84,
+    "runs": 179,
     "wickets": 0
   },
   "Abdul Samad": {
-    "runs": 160,
+    "runs": 164,
     "wickets": 0
   },
   "MP Stoinis": {
-    "runs": 82,
+    "runs": 160,
     "wickets": 0
   },
   "RG Sharma": {
-    "runs": 293,
+    "runs": 418,
     "wickets": 0
   },
   "PJ Cummins": {
@@ -260,7 +260,7 @@
     "wickets": 9
   },
   "Washington Sundar": {
-    "runs": 85,
+    "runs": 133,
     "wickets": 2
   },
   "RA Tripathi": {
@@ -280,19 +280,19 @@
     "wickets": 11
   },
   "RR Pant": {
-    "runs": 128,
+    "runs": 269,
     "wickets": 0
   },
   "MJ Santner": {
-    "runs": 39,
-    "wickets": 3
+    "runs": 40,
+    "wickets": 10
   },
   "GJ Maxwell": {
     "runs": 41,
     "wickets": 3
   },
   "R Tewatia": {
-    "runs": 56,
+    "runs": 99,
     "wickets": 0
   },
   "Ramandeep Singh": {
@@ -304,12 +304,12 @@
     "wickets": 9
   },
   "KH Pandya": {
-    "runs": 97,
-    "wickets": 14
+    "runs": 109,
+    "wickets": 17
   },
   "Rashid Khan": {
-    "runs": 22,
-    "wickets": 7
+    "runs": 40,
+    "wickets": 9
   },
   "JC Archer": {
     "runs": 63,
@@ -389,27 +389,27 @@
   },
   "TA Boult": {
     "runs": 2,
-    "wickets": 16
+    "wickets": 22
   },
   "Avesh Khan": {
     "runs": 21,
-    "wickets": 10
+    "wickets": 13
   },
   "SH Johnson": {
     "runs": 2,
     "wickets": 1
   },
   "B Kumar": {
-    "runs": 10,
-    "wickets": 12
+    "runs": 14,
+    "wickets": 17
   },
   "R Sai Kishore": {
-    "runs": 1,
-    "wickets": 12
+    "runs": 5,
+    "wickets": 19
   },
   "Arshdeep Singh": {
     "runs": 2,
-    "wickets": 16
+    "wickets": 21
   },
   "K Kartikeya": {
     "runs": 3,
@@ -429,7 +429,7 @@
   },
   "JJ Bumrah": {
     "runs": 0,
-    "wickets": 11
+    "wickets": 18
   },
   "Ravi Bishnoi": {
     "runs": 0,
@@ -441,7 +441,7 @@
   },
   "DS Rathi": {
     "runs": 1,
-    "wickets": 12
+    "wickets": 14
   },
   "KK Ahmed": {
     "runs": 1,
@@ -449,15 +449,15 @@
   },
   "M Prasidh Krishna": {
     "runs": 0,
-    "wickets": 19
+    "wickets": 25
   },
   "Mohammed Siraj": {
-    "runs": 0,
-    "wickets": 14
+    "runs": 3,
+    "wickets": 16
   },
   "JR Hazlewood": {
     "runs": 0,
-    "wickets": 9
+    "wickets": 22
   },
   "CV Varun": {
     "runs": 1,
@@ -468,8 +468,8 @@
     "wickets": 13
   },
   "Yash Dayal": {
-    "runs": 0,
-    "wickets": 10
+    "runs": 4,
+    "wickets": 13
   },
   "V Puthur": {
     "runs": 0,
@@ -497,11 +497,11 @@
   },
   "YS Chahal": {
     "runs": 0,
-    "wickets": 14
+    "wickets": 16
   },
   "Suyash Sharma": {
     "runs": 0,
-    "wickets": 4
+    "wickets": 8
   },
   "K Khejroliya": {
     "runs": 0,
@@ -520,7 +520,7 @@
     "wickets": 0
   },
   "JP Inglis": {
-    "runs": 92,
+    "runs": 278,
     "wickets": 0
   },
   "Suryansh Shedge": {
@@ -560,16 +560,16 @@
     "wickets": 2
   },
   "R Shepherd": {
-    "runs": 53,
-    "wickets": 1
+    "runs": 70,
+    "wickets": 6
   },
   "C Bosch": {
     "runs": 20,
     "wickets": 1
   },
   "Azmatullah Omarzai": {
-    "runs": 16,
-    "wickets": 3
+    "runs": 57,
+    "wickets": 8
   },
   "R Powell": {
     "runs": 5,
@@ -604,8 +604,8 @@
     "wickets": 7
   },
   "Harpreet Brar": {
-    "runs": 0,
-    "wickets": 4
+    "runs": 11,
+    "wickets": 10
   },
   "I Sharma": {
     "runs": 0,
@@ -617,17 +617,65 @@
   },
   "Akash Singh": {
     "runs": 0,
-    "wickets": 2
+    "wickets": 4
   },
   "MP Yadav": {
     "runs": 0,
     "wickets": 2
   },
   "G Coetzee": {
+    "runs": 17,
+    "wickets": 2
+  },
+  "Yudhvir Singh": {
     "runs": 0,
     "wickets": 1
   },
-  "Yudhvir Singh": {
+  "MA Agarwal": {
+    "runs": 95,
+    "wickets": 0
+  },
+  "JM Bairstow": {
+    "runs": 85,
+    "wickets": 0
+  },
+  "BKG Mendis": {
+    "runs": 20,
+    "wickets": 0
+  },
+  "MP Breetzke": {
+    "runs": 14,
+    "wickets": 0
+  },
+  "Shahbaz Ahmed": {
+    "runs": 9,
+    "wickets": 0
+  },
+  "RA Bawa": {
+    "runs": 8,
+    "wickets": 0
+  },
+  "Ashwani Kumar": {
+    "runs": 0,
+    "wickets": 11
+  },
+  "W O'Rourke": {
+    "runs": 0,
+    "wickets": 6
+  },
+  "KA Jamieson": {
+    "runs": 0,
+    "wickets": 5
+  },
+  "V Vyshak": {
+    "runs": 0,
+    "wickets": 4
+  },
+  "N Thushara": {
+    "runs": 0,
+    "wickets": 1
+  },
+  "RJ Gleeson": {
     "runs": 0,
     "wickets": 1
   }
