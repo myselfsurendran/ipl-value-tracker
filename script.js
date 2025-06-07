@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const runs = player.runs || 0;
             const wickets = player.wickets || 0;
             const priceLakhs = priceCr * 10;
-            const runsPerLakh = priceLakhs > 0 ? parseFloat(((runs) / priceLakhs).toFixed(2)) : 0;
-            const wicketsPerLakh = priceLakhs > 0 ? parseFloat(((wickets) / priceLakhs).toFixed(2)) : 0;
+            const runsPerLakh = (priceLakhs > 0 && runs > 0) ? parseFloat((runs / priceLakhs).toFixed(2)) : null;
+            const wicketsPerLakh = (priceLakhs > 0 && wickets > 0) ? parseFloat((wickets / priceLakhs).toFixed(2)) : null;
             return { ...player, runsPerLakh, wicketsPerLakh };
         });
     }
