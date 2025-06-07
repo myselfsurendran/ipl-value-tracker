@@ -111,21 +111,25 @@ document.addEventListener('DOMContentLoaded', () => {
      * Sorts an array of player objects.
      */
     function sortPlayers(players, key, direction) {
-        // Logic remains the same
         players.sort((a, b) => {
-            let valueA = a[key]; let valueB = b[key];
+            let valueA = a[key];
+            let valueB = b[key];
             const numericKeys = ['priceCr', 'runs', 'wickets', 'runsPerLakh', 'wicketsPerLakh'];
+    
             if (numericKeys.includes(key)) {
-                valueA = parseFloat(valueA) || 0; valueB = parseFloat(valueB) || 0;
+                valueA = (valueA === null || valueA === undefined) ? -Infinity : parseFloat(valueA);
+                valueB = (valueB === null || valueB === undefined) ? -Infinity : parseFloat(valueB);
                 return direction === 'asc' ? valueA - valueB : valueB - valueA;
             } else {
-                valueA = (valueA || '').toString().toLowerCase(); valueB = (valueB || '').toString().toLowerCase();
+                valueA = (valueA || '').toString().toLowerCase();
+                valueB = (valueB || '').toString().toLowerCase();
                 if (valueA < valueB) return direction === 'asc' ? -1 : 1;
                 if (valueA > valueB) return direction === 'asc' ? 1 : -1;
                 return 0;
             }
         });
     }
+    
 
     /**
      * Updates the visual state of the sort buttons.
